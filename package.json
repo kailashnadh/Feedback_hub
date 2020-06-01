@@ -1,0 +1,27 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Feedback_Hub",
+  "main": "index.js",
+  "engines": {
+    "node": "8.1.1",
+    "npm":"5.0.3"
+  },
+
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kailashnadh/Feedback_hub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kailashnadh/Feedback_hub/issues"
+  },
+  "homepage": "https://github.com/kailashnadh/Feedback_hub#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
