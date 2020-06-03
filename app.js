@@ -20,11 +20,14 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
+require('./models/Users');
+require('./models/Survey');
+require('./services/passport');
 require('https').globalAgent.options.ca = require('ssl-root-cas').create();
 require('./routes/authRoutes')(app);
 require('./routes/paymentRoutes')(app);
-require('./models/Users');
-require('./services/passport');
+require('./routes/surveyRoutes')(app);
+
 mongoose.connect(keys.mongoURI);
 if (process.env.NODE_ENV === 'production') {
     // Express will serve up production assets
